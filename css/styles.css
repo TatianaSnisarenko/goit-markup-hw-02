@@ -1,9 +1,4 @@
 :root {
-  --navy-blue-modal: rgba(46, 47, 66, 0.4);
-  --grey: rgba(46, 47, 66, 0.7);
-  --white: #fff;
-  --dairy: #fcfcfc;
-
   /* Colors */
   --primary-cl: #434455;
   --secondary-cl: #8e8f99;
@@ -30,6 +25,7 @@ body {
   color: var(--primary-cl);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  background-color: var(--white-cl);
 }
 
 ul,
@@ -55,19 +51,6 @@ button {
 
 /* #region Common */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  overflow: hidden;
-}
-
 .advantages-subtitle,
 .portfolio-subtitle,
 .team-card-title {
@@ -85,6 +68,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--dark-cl);
+  text-transform: capitalize;
 }
 
 /* #endregion */
@@ -97,9 +81,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: var(--secondary-font);
-}
-
-.logo-brand {
   color: var(--brand-cl);
 }
 
@@ -138,6 +119,7 @@ button {
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
+  letter-spacing: 0.02em;
   color: var(--white-cl);
   text-align: center;
 }
@@ -163,6 +145,14 @@ button {
 /* #endregion */
 
 /* #region Team */
+.team {
+  background-color: var(--light-cl);
+}
+
+.team-card {
+  background-color: var(--white-cl);
+}
+
 .team-card-title {
   text-align: center;
 }
